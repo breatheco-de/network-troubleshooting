@@ -1,4 +1,4 @@
-# VirtualBox Interactive Tutorial
+# Troubleshooting a network with Packet Tracer
 
 <!-- hide -->
 <a href="https://www.4geeksacademy.co"><img height="280" align="right" src="https://github.com/4GeeksAcademy/installing-windows-on-virtual-machine/blob/master/js-bg-badge.png"></a>
