@@ -50,7 +50,7 @@
   <!---------------English----------------->
   <div class="box">
     <h2>
-      Introduction
+      DHCP
     </h2>
     <p>
       En esta ocasión te presentamos lo que podría ser la red de 4Geeks Academy en una de nuestras sedes. Es un escenario que se suele ver en muchos entornos empresariales.
@@ -79,31 +79,33 @@
   <!---------------Español----------------->
   <div class="box">
     <h2>
-      Introducción
+      Servidores DHCP
     </h2>
     <p>
-      En esta ocasión te presentamos lo que podría ser la red de 4Geeks Academy en una de nuestras sedes. Es un escenario que se suele ver en muchos entornos empresariales.
+      Una vez establecida la conexión entre los servidores y el resto de la red, es hora de que los utilices para asignar direcciones a los demás dispositivos.   
     </p>
     
-    <p>
-      Contamos con un router que representa la conexión entre varias redes de la misma empresa. En este caso corresponden a 3 áreas distintas, el campus de estudiantes, el departamento de marketing y el departamento de IT.
-    </p>
-    
-    <p>
-      Como puedes ver todas las redes cuentan con direcciones privadas clase C que puedes ver en las notas en su respectiva área coloreada.
-    </p>
-    
-    
-    <h3>Para esta práctica debemos realizar lo siguiente:</h3>
+    <h3>
+      En cada uno de ellos debes configurar una piscina o pool de direcciones que serán utilizadas para asignarlas a los equipos que se vayan conectando a la red. Los valores que conforman cada pool son los siguientes:
+    </h3>
     
     <ul>
-      <li>Configurar el servidor DHCP de cada red para </li>que los equipos puedan obtener direcciones IP de forma dinámica
-    <li>Configurar los enlaces entre dispositivos.</li>
-    <li>Configurar la red WiFi del campus</li>
-    <li>Configurar el servidor de Intranet</li>
-    <li>Configurar lista de acceso para restringir el </li>acceso a la Intranet desde el campus
+      <li>Default Gateway: Dirección ip del router, es decir la primera dirección de la red (Ejemplo 192.168.0.1)</li>
+<li>DNS Server: Es el servidor de nombres de dominio, en este caso utiliza <span class="highlight">192.168.2.10</span> que corresponde al servidor de la intranet que presta este servicio.</li>
+<li>Start Ip Address: Corresponde a la dirección desde la cual empezarán a asignarse las direcciones IP. En este caso empieza desde la dirección 100 de la red (Ejemplo: 192.168.2.100)</li>
+<li>Subnet Mask: Es la mascara de subred que en este caso es <span class="highlight">255.255.255.0</span></li>
+<li> Maximun number of users: El máximo numero de usuarios debe ser <span class="highlight">100</span></li>
     </ul>
-    Avanza a la siguiente página para comenzar.
+    <p>
+      Una vez que hayas establecido estos valores, debes presionar el botón <span class="highlight">Save</span> para guardar los cambios del pool. El resto de los valores se quedan por defecto.
+    </p>
+    
+    <p>
+      En la opción <span class="highlight">Settings</span> de la pestaña <span class="highlight">Config</span> debes configurar de forma estática la puerta de enlace (Default gateway) y el DNS. Recuerda que la puerta de enlace de cada red es la primera dirección asignable del rango de direcciones ip de nuestra red, mientras que para el DNS apunta al servidor Intranet: 192.168.2.10
+    </p>
+    <p>
+      Recuerda variar las direcciones de red correspondiente para cada servidor. Cuando los hayas configurado todos, es turno de que actives la opción DHCP en cada dispositivo final para que adquieran conectividad.
+    </p>
   </div>
 
 </div>

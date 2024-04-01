@@ -1,0 +1,146 @@
+<style>
+  .box {
+    border-left: 2px black solid;
+    padding: 5px;
+    width: 50%;
+  }
+
+  .brand {
+    max-width: 30%;
+    float: left;
+    position: relative;
+  }
+
+  li {
+    padding-bottom: 10px;
+  }
+
+  .screenshot {
+    max-width: 100%;
+    border: 1px solid black;
+    margin: 5px;
+  }
+
+  .quote {
+    padding: 5px 15px;
+    border-left: solid gray 1px;
+    margin: 0px;
+    font-style: italic;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .highlight {
+    background-color: lightblue;
+    font-weight: 600;
+    outline: 3px solid lightblue;
+  }
+</style>
+<img class="brand" src="https://breathecode.herokuapp.com/v1/media/file/new-logo-4geeks-png" alt="4geeks Logo">
+<div class="container">
+  <!---------------English----------------->
+  <div class="box">
+    <h2>
+      Lista de acceso
+    </h2>
+    <p>
+      Todo bien hasta ahora, pero tenemos una falla de seguridad. Nuestra intranet está expuesta a las personas que
+      llegan al campus y esto compromete la integridad de nuestra información. Debes impedir que se acceda a la intranet
+      desde el campus, pero sin afectar el servicio de DNS que es vital para el funcionamiento normal de la red, ni
+      tampoco bloquear el acceso desde los demás departamentos de 4geeks que necesitan acceso a la intranet.
+    </p>
+
+    <p>
+      Esto lo logras con una lista de acceso, las cuales son reglas que utilizará el Router para determinar si permite o
+      no el paso de cierta información que va llegando por sus interfaces.
+    </p>
+
+    <p>
+      En este caso se deben configurar 3 reglas para la interfaz de la red del campus:
+    </p>
+
+    <ol>
+      <li>Negar el paso a paquetes que se dirijan al servidor usando el puerto 80</li>
+      <li>Negar el paso a paquetes que se dirijan al servidor usando el puerto 443</li>
+      <li>Permitir el resto de las conexiones</li>
+    </ol>
+
+    <p>Los puertos 80 y 443 corresponden a los protocolos HTTP y HTTPS respectivamente, y son los que utilizan los navegadores para acceder a las páginas web, y por ello deben ser bloqueados. Para esto nos adentraremos en la interfaz de linea de comando del router en la pestaña `CLI` donde debes ejecutar los siguientes comandos</p>
+
+    <ol>
+      <li><span class="highlight">enable</span> Activa la terminal con privilegios administrativos</li>
+      <li><span class="highlight">config terminal</span> Entra en modo de configuración</li>
+      <li><span class="highlight">interface gigabit 0/0</span> Entra en la configuración de la interfaz de la red del campus</li>
+      <li><span class="highlight">ip access-group 100 in</span> Agrega la interfaz dentro del grupo de la lista de acceso '100'</li>
+      <li><span class="highlight">exit</span> Sale de la configuración de la interfaz</li>
+      <li><span class="highlight">access-list 100 deny tcp any host 192.168.2.10 eq www</span> Agregar una regla a la lista de acceso '100' para no
+        permitir paquetes hacia el servidor de intranet que usen el puerto 80</li>
+      <li><span class="highlight">access-list 100 deny tcp any host 192.168.2.10 eq 443</span> Agregar una regla a la lista de acceso '100' para no
+        permitir paquetes hacia el servidor de intranet que usen el puerto 443</li>
+      <li><span class="highlight">access-list 100 permit ip any any</span> Regla para permitir el resto del tráfico en la red. Debe especificarse de
+        última</li>
+      <li><span class="highlight">do write</span> Guarda la configuración en la NVRAM</li>
+    </ol>
+    <p>Puedes verificar el funcionamiento de esta lista de acceso intentando acceder a 4geeks.com desde una PC del
+      campus, lo cual te debería retornar un error <span class="highlight">Requested timeout</span>, aunque una prueba de ping si debe funcionar
+      correctamente.</p>
+  </div>
+  <!---------------Español----------------->
+  <div class="box">
+    <h2>
+      Lista de acceso
+    </h2>
+    <p>
+      Todo bien hasta ahora, pero tenemos una falla de seguridad. Nuestra intranet está expuesta a las personas que
+      llegan al campus y esto compromete la integridad de nuestra información. Debes impedir que se acceda a la intranet
+      desde el campus, pero sin afectar el servicio de DNS que es vital para el funcionamiento normal de la red, ni
+      tampoco bloquear el acceso desde los demás departamentos de 4geeks que necesitan acceso a la intranet.
+    </p>
+
+    <p>
+      Esto lo logras con una lista de acceso, las cuales son reglas que utilizará el Router para determinar si permite o
+      no el paso de cierta información que va llegando por sus interfaces.
+    </p>
+
+    <p>
+      En este caso se deben configurar 3 reglas para la interfaz de la red del campus:
+    </p>
+
+    <ol>
+      <li>Negar el paso a paquetes que se dirijan al servidor usando el puerto 80</li>
+      <li>Negar el paso a paquetes que se dirijan al servidor usando el puerto 443</li>
+      <li>Permitir el resto de las conexiones</li>
+    </ol>
+
+    <p>Los puertos 80 y 443 corresponden a los protocolos HTTP y HTTPS respectivamente, y son los que utilizan los navegadores para acceder a las páginas web, y por ello deben ser bloqueados. Para esto nos adentraremos en la interfaz de linea de comando del router en la pestaña `CLI` donde debes ejecutar los siguientes comandos</p>
+
+    <ol>
+      <li><span class="highlight">enable</span> Activa la terminal con privilegios administrativos</li>
+      <li><span class="highlight">config terminal</span> Entra en modo de configuración</li>
+      <li><span class="highlight">interface gigabit 0/0</span> Entra en la configuración de la interfaz de la red del campus</li>
+      <li><span class="highlight">ip access-group 100 in</span> Agrega la interfaz dentro del grupo de la lista de acceso '100' para filtrar las conexiones entrantes</li>
+      <li><span class="highlight">exit</span> Sale de la configuración de la interfaz</li>
+      <li><span class="highlight">access-list 100 deny tcp any host 192.168.2.10 eq www</span> Agregar una regla a la lista de acceso '100' para no
+        permitir paquetes hacia el servidor de intranet que usen el puerto 80</li>
+      <li><span class="highlight">access-list 100 deny tcp any host 192.168.2.10 eq 443</span> Agregar una regla a la lista de acceso '100' para no
+        permitir paquetes hacia el servidor de intranet que usen el puerto 443</li>
+      <li><span class="highlight">access-list 100 permit ip any any</span> Regla para permitir el resto del tráfico en la red. Debe especificarse de
+        última</li>
+      <li><span class="highlight">do write</span> Guarda la configuración en la NVRAM</li>
+    </ol>
+    <p>Puedes verificar el funcionamiento de esta lista de acceso intentando acceder a 4geeks.com desde una PC del
+      campus, lo cual te debería retornar un error <span class="highlight">Requested timeout</span>, aunque una prueba de ping si debe funcionar
+      correctamente.</p>
+  </div>
+
+</div>

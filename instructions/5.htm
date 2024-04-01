@@ -1,0 +1,107 @@
+<style>
+  .box {
+    border-left: 2px black solid;
+    padding: 5px;
+    width: 50%;
+  }
+
+  .brand {
+    max-width: 30%;
+    float: left;
+    position: relative;
+  }
+
+  li {
+    padding-bottom: 10px;
+  }
+
+  .screenshot {
+    max-width: 100%;
+    border: 1px solid black;
+    margin: 5px;
+  }
+
+  .quote {
+    padding: 5px 15px;
+    border-left: solid gray 1px;
+    margin: 0px;
+    font-style: italic;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .highlight{
+    background-color: lightblue;
+    font-weight: 600;
+    outline: 3px solid lightblue;
+  }
+</style>
+<img class="brand" src="https://breathecode.herokuapp.com/v1/media/file/new-logo-4geeks-png" alt="4geeks Logo">
+<div class="container">
+  <!---------------English----------------->
+  <div class="box">
+    <h2>
+      Intranet Server
+    </h2>
+    <p>
+      Este servidor representa los servicios internos que se usan en la red de 4geeks. En este caso presta servicios de DNS y Web, los cuales se configuran en la pestaña <span class="highlight">Services</span>.
+    </p>
+    
+    <p>
+      El servidor web ya esta cargado con la página que debe mostrar y solo necesitas activarlo con ambos protocolos, HTTP y HTTPS.
+    </p>
+    
+    <p>
+      El servicio DNS debe ser activado y se le agregará un registro para que dirija la dirección <span class="highlight">4geeks.com</span> hacia la intranet. 
+    </p>
+    <h3>Debes configurar lo siguiente:</h3>
+    
+    <ul>
+      <li> <strong>Name:</strong> 4geeks.com</li>
+      <li> <strong>Type:</strong> A Record</li>
+      <li> <strong>Address:</strong> 192.168.2.10</li>
+    </ul>
+    
+    <p>
+      Presiona el botón <span class="highlight">Add</span> para crear el registro. Si seguiste correctamente las anotaciones en el paso 3, el servidor Intranet debe tener configurada la ip <span class="highlight">192.168.2.10</span> de forma estática. Ya con esto, si accedes al navegador desde el escritorio de alguna de las pc de la red, puedes ver la página <span class="highlight">4geeks.com</span>
+    </p>
+  </div>
+  <!---------------Español----------------->
+  <div class="box">
+    <h2>
+      Servidor de Intranet
+    </h2>
+    <p>
+      Este servidor representa los servicios internos que se usan en la red de 4geeks. En este caso presta servicios de DNS y Web, los cuales se configuran en la pestaña <span class="highlight">Services</span>.
+    </p>
+    
+    <p>
+      El servidor web ya esta cargado con la página que debe mostrar y solo necesitas activarlo con ambos protocolos, HTTP y HTTPS.
+    </p>
+    
+    <p>
+      El servicio DNS debe ser activado y se le agregará un registro para que dirija la dirección <span class="highlight">4geeks.com</span> hacia la intranet. 
+    </p>
+    <h3>Debes configurar lo siguiente:</h3>
+    
+    <ul>
+      <li> <strong>Name:</strong> 4geeks.com</li>
+      <li> <strong>Type:</strong> A Record</li>
+      <li> <strong>Address:</strong> 192.168.2.10</li>
+    </ul>
+    
+    <p>
+      Presiona el botón <span class="highlight">Add</span> para crear el registro. Si seguiste correctamente las anotaciones en el paso 3, el servidor Intranet debe tener configurada la ip <span class="highlight">192.168.2.10</span> de forma estática. Ya con esto, si accedes al navegador desde el escritorio de alguna de las pc de la red, puedes ver la página <span class="highlight">4geeks.com</span>
+    </p>
+  </div>
+
+</div>

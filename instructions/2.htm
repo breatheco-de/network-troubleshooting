@@ -1,0 +1,124 @@
+<style>
+  .box {
+    border-left: 2px black solid;
+    padding: 5px;
+    width: 50%;
+  }
+
+  .brand {
+    max-width: 30%;
+    float: left;
+    position: relative;
+  }
+
+  li {
+    padding-bottom: 10px;
+  }
+
+  .screenshot {
+    max-width: 100%;
+    border: 1px solid black;
+    margin: 5px;
+  }
+
+  .quote {
+    padding: 5px 15px;
+    border-left: solid gray 1px;
+    margin: 0px;
+    font-style: italic;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .highlight {
+    background-color: lightblue;
+    font-weight: 600;
+    outline: 3px solid lightblue;
+  }
+</style>
+<img class="brand" src="https://breathecode.herokuapp.com/v1/media/file/new-logo-4geeks-png" alt="4geeks Logo">
+<div class="container">
+  <!---------------English----------------->
+  <div class="box">
+    <h2>
+      IP Addresses
+    </h2>
+    <p>
+      Como puedes observar en cada área coloreada están anotadas las direcciones de IP de las redes, y cada una tiene
+      una mascara <span class="highlight">/24</span> que también puede ser expresada como <span
+        class="highlight">255.255.255.0</span>, lo que significa que de cada red puedes asignar direcciones desde la 1
+      hasta la 254, por ejemplo:
+    </p>
+    <div class="quote">
+      192.168.0.0 - Dirección de red
+      192.168.0.1 - Primera dirección asignable
+      192.168.0.254 - Última dirección asignable
+      192.168.0.255 - Dirección de difusión o broadcast
+    </div>
+    <h3>En base a esto configura lo siguiente:</h3>
+
+    <p>
+      Como puedes ver todas las redes cuentan con direcciones privadas clase C que puedes ver en las notas en su
+      respectiva área coloreada.
+    </p>
+
+    <ul>
+      <li>Asigna la primera dirección de la red a la puerta de enlace en el router, según la interfaz que corresponda.
+      </li>
+      <li>Configura direcciones ip estática en los servidores, utilizando las anotaciones en cada red.</li>
+      <li>Todas las interfaces deben estar activadas para que haya conectividad.</li>
+    </ul>
+    <p>Recuerda que para el caso del router debes verificar que todas las interfaces estén encendidas, asi como también
+      guardar la configuración en la NVRAM para que los cambios persistan después de un reinicio.
+
+    </p>
+    <p>Al terminar este paso deberás tener conectividad entre los servidores y el router.</p>
+  </div>
+  <!---------------Español----------------->
+  <div class="box">
+    <h2>
+      Direcciones IP
+    </h2>
+    <p>
+      Como puedes observar en cada área coloreada están anotadas las direcciones de IP de las redes, y cada una tiene
+      una mascara <span class="highlight">/24</span> que también puede ser expresada como <span
+        class="highlight">255.255.255.0</span>, lo que significa que de cada red puedes asignar direcciones desde la 1
+      hasta la 254, por ejemplo:
+    </p>
+    <div class="quote">
+      192.168.0.0 - Dirección de red
+      192.168.0.1 - Primera dirección asignable
+      192.168.0.254 - Última dirección asignable
+      192.168.0.255 - Dirección de difusión o broadcast
+    </div>
+    <h3>En base a esto configura lo siguiente:</h3>
+
+    <p>
+      Como puedes ver todas las redes cuentan con direcciones privadas clase C que puedes ver en las notas en su
+      respectiva área coloreada.
+    </p>
+
+    <ul>
+      <li>Asigna la primera dirección de la red a la puerta de enlace en el router, según la interfaz que corresponda.
+      </li>
+      <li>Configura direcciones ip estática en los servidores, utilizando las anotaciones en cada red.</li>
+      <li>Todas las interfaces deben estar activadas para que haya conectividad.</li>
+    </ul>
+    <p>Recuerda que para el caso del router debes verificar que todas las interfaces estén encendidas, asi como también
+      guardar la configuración en la NVRAM para que los cambios persistan después de un reinicio.
+
+    </p>
+    <p>Al terminar este paso deberás tener conectividad entre los servidores y el router.</p>
+  </div>
+
+</div>
