@@ -31,6 +31,10 @@ This practice covers the following subjects:
 
 [Download here](https://github.com/4GeeksAcademy/network-troubleshooting/raw/master/assets/network-troubleshooting.pka) the file and open it with Packet Tracer, there you will find the instructions to follow and achieve the proposed objectives.
 
+## Instructions
+
+Outside Packet Tracer, you can find the [instructions here](./instructions.md)
+
 <!-- endhide -->
 
 ## Contributors
