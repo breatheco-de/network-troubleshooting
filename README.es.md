@@ -35,7 +35,7 @@ Esta práctica abarca los siguientes temas:
 
 ## Instrucciones
 
-Fuera de Packet Tracer, puedes encontrar las [instrucciones aquí](./instructions.es.md)
+Fuera de Packet Tracer, puedes encontrar las [instrucciones aquí](https://github.com/4GeeksAcademy/network-troubleshooting/blob/master/instructions.es.md)
 
 ## Colaboradores
 
