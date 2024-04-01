@@ -1,4 +1,4 @@
-# VirtualBox Interactive Tutorial
+# Solucionando problemas de red
 
 <!-- hide -->
 <a href="https://www.4geeksacademy.co"><img height="280" align="right" src="https://github.com/4GeeksAcademy/installing-windows-on-virtual-machine/blob/master/js-bg-badge.png"></a>
@@ -12,57 +12,67 @@
 *Estas instrucciones [están disponibles en 🇪🇸 español](https://github.com/4GeeksAcademy/installing-windows-on-virtual-machine/blob/main/README.es.md) :es:*
 <!-- endhide -->
 
-En ésta práctica instalaras VirtualBox en tu computadora y lo utilizarás para crear una máquina virtual con Windows 10. VirtualBox será tu laboratorio a lo largo del curso, donde tendrás máquinas virtuales con sistemas operativos distintos donde podrás experimentar cosas en un entorno controlado y sin afectar tu maquina principal.
+En este escenario simulas ser el responsable de la red de un campus de 4Geeks Academy. Deberás completar las configuraciones necesarias para poner en funcionamiento la red, e implementar medidas de seguridad para garantizar el uso correcto de los servicios internos.
 
-Los siguientes pasos en esta práctica son:
+Esta práctica abarca los siguientes temas:
 
-1. Instalación VirtualBox
-2. Descarga de windows
-3. Creación de la maquina virtual
-4. Verificación la instalación
+1. Direcciones IP
+2. Configuración de servicios DHCP
+3. Configuración de DNS
+4. Configuracion de redes WiFi
+5. Listas de control de acceso (ACL)
 
 <!-- hide -->
-## Before you start... some related tutorials:
+## Antes de empezar... algo relacionado con los tutoriales:
 
-> We need you! These exercises are built and maintained in collaboration with contributors such as yourself. If you find any bugs or misspellings please contribute and/or report them.
+> Te necesitamos! Estos ejercicios están construidos y mantenidos por contribuciones de gente como tu. Si encuentras algún bug o error ortográfico, por favor reportalo.
 
-## One click installation (recommended):
+## Instalación en un clic (recomendado)
 
-You can open these exercises in just a few seconds by clicking: [Open in Codespaces](https://codespaces.new/?repo=4GeeksAcademy/installing-windows-on-virtual-machine) (recommended) or [Open in Gitpod](https://gitpod.io#https://github.com/4GeeksAcademy/installing-windows-on-virtual-machine.git).
+Puedes empezar estos ejercicios en pocos segundos haciendo clic en: [Abrir en Codespaces](https://codespaces.new/?repo=4GeeksAcademy/python-beginner-programming-exercises) (recomendado) o [Abrir en Gitpod](https://gitpod.io#https://github.com/4GeeksAcademy/python-beginner-programming-exercises).
 
-> Once you have VSCode open the LearnPack exercises should start automatically. If exercises don't run automatically, you can try typing on your terminal: `$ learnpack start`
+> Una vez ya tengas abierto VSCode, los ejercicios de LearnPack deberían empezar automáticamente, si esto no sucede puedes intentar empezar los ejercicios escribiendo este comando en tu terminal: `$ learnpack start`
 
-## Local Installation
+## Instalación local:
 
-Clone this repository in your local environment ([Clone this repository](https://4geeks.com/how-to/github-clone-repository)) and follow the steps below:
-
-1. Install LearnPack, the package manager for learning tutorials and the node compiler plugin for learnpack, make sure you also have node.js 14:
+1. Asegúrate de instalar [LearnPack](https://learnpack.co), node.js version 14+ y Python version 3+. Este es el comando para instalar LearnPack:
 
 ```bash
-$ npm i @learnpack/learnpack -g
-$ learnpack plugins:install learnpack-node
+$ npm i @learnpack/learnpack@2.1.20 -g && learnpack plugins:install @learnpack/python@1.0.0
 ```
 
-2. Start the tutorial/exercises by running the following command at the same level where your learn.json file is:
+2. Clona o descarga este repositorio en tu ambiente local.
 
 ```bash
-$ npm i jest@24.8.0 -g
+$ git clone https://github.com/4GeeksAcademy/python-beginner-programming-exercises.git
+$ cd python-beginner-programming-exercises
+```
+
+> Nota: Una vez que termine de descargar, encontrarás la carpeta "exercises" que contiene todos los ejercicios.
+
+3. Inicializa el tutorial ejecutando el siguiente comando al mismo nivel en el que se encuentra tu archivo learn.json: 
+
+```bash
+$ pip3 install pytest==6.2.5 pytest-testdox mock
 $ learnpack start
 ```
 
 <!-- endhide -->
 
-## How are the exercises organized?
 
-Each exercise contains the following files:
+## ¿Cómo están organizados los ejercicios?
 
-1. **README.md:** contains exercise instructions.
-2. **test.js:** contains the testing script for the exercise (you don't have to open this file).
-3. **app.js:** ignore this file.
+Cada ejercicio es una pequeña aplicación de Python que contiene los siguientes archivos:
 
-## Contributors
+1. **app.py:** representa el archivo de entrada de Python que será ejecutado por el computador.
+2. **README.es.md:** Contiene las instrucciones del ejercicio.
+3. **test.py:** Contiene el script del test para el ejercicio (no es necesario que abras este archivo).
 
-Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds/all-contributors#emoji-key)):
+> Nota: Estos ejercicios tienen calificación automática. Los tests son muy rígidos y estrictos, mi recomendación es que no prestes demasiada atención a los tests y los uses solo como una sugerencia o podrías frustrarte.
+
+## Colaboradores
+
+Gracias a estas personas maravillosas ([emoji key](https://github.com/kentcdodds/all-contributors#emoji-key)):
 
 1. [Arnaldo Perez (arnaloperez)](https://github.com/arnaloperez) contribution: (build-tutorial) ✅, (documentation) 📖
   
@@ -70,6 +80,6 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
 
 3. [Lorena Gubaira (lorenagubaira)](https://github.com/lorenagubaira), contribution: (bug reports) 🐛, contribution: (coder), (translation) 🌎
 
-This project follows the [all-contributors](https://github.com/kentcdodds/all-contributors) specification. Contributions of any kind are welcome!
+Este proyecto sigue la especificación [all-contributors](https://github.com/kentcdodds/all-contributors). ¡Todas las contribuciones son bienvenidas!
 
-This and many other exercises are built by students as part of the 4Geeks Academy [Coding Bootcamp](https://4geeksacademy.com/us/coding-bootcamp) by [Alejandro Sánchez](https://twitter.com/alesanchezr) and many other contributors. Find out more about our [Full Stack Developer Course](https://4geeksacademy.com/us/coding-bootcamps/part-time-full-stack-developer), and  [Data Science Bootcamp](https://4geeksacademy.com/us/coding-bootcamps/datascience-machine-learning).
+Este y otros ejercicios son usados para [aprender a programar](https://4geeksacademy.com/es/aprender-a-programar/aprender-a-programar-desde-cero) por parte de los alumnos de 4Geeks Academy [Coding Bootcamp](https://4geeksacademy.com/us/coding-bootcamp) realizado por [Alejandro Sánchez](https://twitter.com/alesanchezr) y muchos otros contribuyentes. Conoce más sobre nuestros [Cursos de Programación](https://4geeksacademy.com/es/curso-de-programacion-desde-cero?lang=es) para convertirte en [Full Stack Developer](https://4geeksacademy.com/es/coding-bootcamps/desarrollador-full-stack/?lang=es), o nuestro [Data Science Bootcamp](https://4geeksacademy.com/es/coding-bootcamps/curso-datascience-machine-learning).

@@ -1,6 +1,6 @@
 {
-	"slug" : "introduction-to-packet-tracer",
-	"title" : "Introduction to Packet Tracer",
+	"slug" : "troubleshooting-packet-tracer-network",
+	"title" : "Troubleshooting a network with Packet Tracer",
 	"preview": "https://breathecode.herokuapp.com/v1/media/file/thumbnail-introduccion-packet-tracer",
 	"status": "draft",
 	"translations": ["us","es"],
@@ -9,7 +9,7 @@
 	"syntax": "markdown",
 	"duration" : 3,
   "projectType": "project",
-	"description" : "Build your first network on Packet Tracer",
+	"description" : "Setup a network with Packet Tracer, and implement Access Control List to ensure the correct use of the servers in it.",
 	"delivery": {
 		"instructions": {
 			"us": "Please drag your finished pka file and upload it here",
