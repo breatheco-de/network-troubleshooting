@@ -27,39 +27,11 @@ This practice covers the following subjects:
 
 > We need you! These exercises are built and maintained in collaboration with contributors such as yourself. If you find any bugs or misspellings please contribute and/or report them.
 
-## One click installation (recommended):
+## Download and run:
 
-You can open these exercises in just a few seconds by clicking: [Open in Codespaces](https://codespaces.new/?repo=4GeeksAcademy/installing-windows-on-virtual-machine) (recommended) or [Open in Gitpod](https://gitpod.io#https://github.com/4GeeksAcademy/installing-windows-on-virtual-machine.git).
-
-> Once you have VSCode open the LearnPack exercises should start automatically. If exercises don't run automatically, you can try typing on your terminal: `$ learnpack start`
-
-## Local Installation
-
-Clone this repository in your local environment ([Clone this repository](https://4geeks.com/how-to/github-clone-repository)) and follow the steps below:
-
-1. Install LearnPack, the package manager for learning tutorials and the node compiler plugin for learnpack, make sure you also have node.js 14:
-
-```bash
-$ npm i @learnpack/learnpack -g
-$ learnpack plugins:install learnpack-node
-```
-
-2. Start the tutorial/exercises by running the following command at the same level where your learn.json file is:
-
-```bash
-$ npm i jest@24.8.0 -g
-$ learnpack start
-```
+[Download here](https://github.com/4GeeksAcademy/network-troubleshooting/raw/master/assets/network-troubleshooting.pka) the file and open it with Packet Tracer, there you will find the instructions to follow and achieve the proposed objectives.
 
 <!-- endhide -->
-
-## How are the exercises organized?
-
-Each exercise contains the following files:
-
-1. **README.md:** contains exercise instructions.
-2. **test.js:** contains the testing script for the exercise (you don't have to open this file).
-3. **app.js:** ignore this file.
 
 ## Contributors
 

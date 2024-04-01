@@ -27,48 +27,11 @@ Esta práctica abarca los siguientes temas:
 
 > Te necesitamos! Estos ejercicios están construidos y mantenidos por contribuciones de gente como tu. Si encuentras algún bug o error ortográfico, por favor reportalo.
 
-## Instalación en un clic (recomendado)
+## Download and run:
 
-Puedes empezar estos ejercicios en pocos segundos haciendo clic en: [Abrir en Codespaces](https://codespaces.new/?repo=4GeeksAcademy/python-beginner-programming-exercises) (recomendado) o [Abrir en Gitpod](https://gitpod.io#https://github.com/4GeeksAcademy/python-beginner-programming-exercises).
-
-> Una vez ya tengas abierto VSCode, los ejercicios de LearnPack deberían empezar automáticamente, si esto no sucede puedes intentar empezar los ejercicios escribiendo este comando en tu terminal: `$ learnpack start`
-
-## Instalación local:
-
-1. Asegúrate de instalar [LearnPack](https://learnpack.co), node.js version 14+ y Python version 3+. Este es el comando para instalar LearnPack:
-
-```bash
-$ npm i @learnpack/learnpack@2.1.20 -g && learnpack plugins:install @learnpack/python@1.0.0
-```
-
-2. Clona o descarga este repositorio en tu ambiente local.
-
-```bash
-$ git clone https://github.com/4GeeksAcademy/python-beginner-programming-exercises.git
-$ cd python-beginner-programming-exercises
-```
-
-> Nota: Una vez que termine de descargar, encontrarás la carpeta "exercises" que contiene todos los ejercicios.
-
-3. Inicializa el tutorial ejecutando el siguiente comando al mismo nivel en el que se encuentra tu archivo learn.json: 
-
-```bash
-$ pip3 install pytest==6.2.5 pytest-testdox mock
-$ learnpack start
-```
+[Descarga aquí](https://github.com/4GeeksAcademy/network-troubleshooting/raw/master/assets/network-troubleshooting.pka) el archivo y ejecutalos con Packet Tracer, ahi encontrarás las instrucciones a seguir para lograr los objetivos propuestos.
 
 <!-- endhide -->
-
-
-## ¿Cómo están organizados los ejercicios?
-
-Cada ejercicio es una pequeña aplicación de Python que contiene los siguientes archivos:
-
-1. **app.py:** representa el archivo de entrada de Python que será ejecutado por el computador.
-2. **README.es.md:** Contiene las instrucciones del ejercicio.
-3. **test.py:** Contiene el script del test para el ejercicio (no es necesario que abras este archivo).
-
-> Nota: Estos ejercicios tienen calificación automática. Los tests son muy rígidos y estrictos, mi recomendación es que no prestes demasiada atención a los tests y los uses solo como una sugerencia o podrías frustrarte.
 
 ## Colaboradores
 
