@@ -27,6 +27,8 @@ This practice covers the following subjects:
 
 > We need you! These exercises are built and maintained in collaboration with contributors such as yourself. If you find any bugs or misspellings please contribute and/or report them.
 
+<!-- endhide -->
+
 ## Download and run:
 
 [Download here](https://github.com/4GeeksAcademy/network-troubleshooting/raw/master/assets/network-troubleshooting.pka) the file and open it with Packet Tracer, there you will find the instructions to follow and achieve the proposed objectives.
@@ -35,7 +37,6 @@ This practice covers the following subjects:
 
 Outside Packet Tracer, you can find the [instructions here](./instructions.md)
 
-<!-- endhide -->
 
 ## Contributors
 

@@ -27,6 +27,8 @@ Esta práctica abarca los siguientes temas:
 
 > Te necesitamos! Estos ejercicios están construidos y mantenidos por contribuciones de gente como tu. Si encuentras algún bug o error ortográfico, por favor reportalo.
 
+<!-- endhide -->
+
 ## Descarga y ejecuta
 
 [Descarga aquí](https://github.com/4GeeksAcademy/network-troubleshooting/raw/master/assets/network-troubleshooting.pka) el archivo y ejecutalos con Packet Tracer, ahi encontrarás las instrucciones a seguir para lograr los objetivos propuestos.
@@ -34,8 +36,6 @@ Esta práctica abarca los siguientes temas:
 ## Instrucciones
 
 Fuera de Packet Tracer, puedes encontrar las [instrucciones aquí](./instructions.es.md)
-
-<!-- endhide -->
 
 ## Colaboradores
 
