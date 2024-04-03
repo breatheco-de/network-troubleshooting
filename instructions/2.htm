@@ -54,35 +54,35 @@
       IP Addresses
     </h2>
     <p>
-      Como puedes observar en cada área coloreada están anotadas las direcciones de IP de las redes, y cada una tiene
-      una mascara <span class="highlight">/24</span> que también puede ser expresada como <span
-        class="highlight">255.255.255.0</span>, lo que significa que de cada red puedes asignar direcciones desde la 1
-      hasta la 254, por ejemplo:
+      As you can see, in each colored area the IP addresses of the networks are noted, and each one has
+       a mask <span class="highlight">/24</span> which can also be expressed as <span
+        class="highlight">255.255.255.0</span>, which means that from each network you can assign addresses from 1
+        to 254, for example:
     </p>
     <div class="quote">
-      192.168.0.0 - Dirección de red
-      192.168.0.1 - Primera dirección asignable
-      192.168.0.254 - Última dirección asignable
-      192.168.0.255 - Dirección de difusión o broadcast
+      192.168.0.0 - network address
+      192.168.0.1 - First assignable address
+      192.168.0.254 - Last assignable address
+      192.168.0.255 - Broadcast address
     </div>
-    <h3>En base a esto configura lo siguiente:</h3>
+    <h3>Based on this, configure the following:</h3>
 
     <p>
-      Como puedes ver todas las redes cuentan con direcciones privadas clase C que puedes ver en las notas en su
-      respectiva área coloreada.
+      As you can see, all networks have private class C addresses that you can see in the notes in their
+       respective colored area.
     </p>
 
     <ul>
-      <li>Asigna la primera dirección de la red a la puerta de enlace en el router, según la interfaz que corresponda.
+      <li>Assigns the first network address to the gateway on the router, depending on the corresponding interface.
       </li>
-      <li>Configura direcciones ip estática en los servidores, utilizando las anotaciones en cada red.</li>
-      <li>Todas las interfaces deben estar activadas para que haya conectividad.</li>
+      <li>Configure static IP addresses on the servers, using the annotations on each network.</li>
+      <li>All interfaces must be enabled for connectivity.</li>
     </ul>
-    <p>Recuerda que para el caso del router debes verificar que todas las interfaces estén encendidas, asi como también
-      guardar la configuración en la NVRAM para que los cambios persistan después de un reinicio.
+    <p>Remember that in the case of the router you must verify that all interfaces are turned on, as well as
+      save the configuration to NVRAM so that changes persist after a reboot.
 
     </p>
-    <p>Al terminar este paso deberás tener conectividad entre los servidores y el router.</p>
+    <p>At the end of this step you should have connectivity between the servers and the router.</p>
   </div>
   <!---------------Español----------------->
   <div class="box">

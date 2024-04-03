@@ -50,32 +50,34 @@
   <!---------------English----------------->
   <div class="box">
     <h2>
-      DHCP
+      DHCP Servers
     </h2>
     <p>
-      En esta ocasión te presentamos lo que podría ser la red de 4Geeks Academy en una de nuestras sedes. Es un escenario que se suele ver en muchos entornos empresariales.
+      Once the connection between the servers and the rest of the network is established, it's time for you to use them to assign addresses to the other devices.
     </p>
-    
-    <p>
-      Contamos con un router que representa la conexión entre varias redes de la misma empresa. En este caso corresponden a 3 áreas distintas, el campus de estudiantes, el departamento de marketing y el departamento de IT.
-    </p>
-    
-    <p>
-      Como puedes ver todas las redes cuentan con direcciones privadas clase C que puedes ver en las notas en su respectiva área coloreada.
-    </p>
-    
-    
-    <h3>Para esta práctica debemos realizar lo siguiente:</h3>
+    <h3>
+      In each of them, you must configure an address pool that will be used to assign addresses to the devices that connect to the network. The values ​​that make up each pool are as follows:
+    </h3>
     
     <ul>
-      <li>Configurar el servidor DHCP de cada red para </li>que los equipos puedan obtener direcciones IP de forma dinámica
-    <li>Configurar los enlaces entre dispositivos.</li>
-    <li>Configurar la red WiFi del campus</li>
-    <li>Configurar el servidor de Intranet</li>
-    <li>Configurar lista de acceso para restringir el </li>acceso a la Intranet desde el campus
+      <li>Default Gateway: IP address of the router, which is the first address of the network (Example 192.168.0.1)</li>
+<li>DNS Server: It is the Domain Name Server, in this case, use <span class="highlight">192.168.2.10</span> which corresponds to the intranet server providing this service.</li>
+<li>Start IP Address: Corresponds to the address from which IP addresses will start being assigned. In this case, it starts from address 100 of the network (Example: 192.168.2.100)</li>
+<li>Subnet Mask: It is the subnet mask which in this case is <span class="highlight">255.255.255.0</span></li>
+<li>Maximum number of users: The maximum number of users should be <span class="highlight">100</span></li>
     </ul>
-    Avanza a la siguiente página para comenzar.
+    <p>
+      Once you have set these values, you should press the <span class="highlight">Save</span> button to save the pool changes. The rest of the values ​​remain by default.
+    </p>
+    <p>
+      In the <span class="highlight">Settings</span> option of the <span class="highlight">Config</span> tab, you should statically configure the gateway (Default gateway) and the DNS. Remember that the gateway for each network is the first assignable address in the IP address range of our network, while for DNS it points to the Intranet server: 192.168.2.10.
+    </p>
+    <p>
+      Remember to vary the corresponding network addresses for each server. Once you have configured all of them, it's time to activate the DHCP option on each end device so that they acquire connectivity.
+    </p>
   </div>
+
+</div>
   <!---------------Español----------------->
   <div class="box">
     <h2>
