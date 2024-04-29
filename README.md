@@ -22,13 +22,6 @@ This practice covers the following subjects:
 4. WiFi networks
 5. Access control list (ACL)
 
-<!-- hide -->
-## Before you start... some related tutorials:
-
-> We need you! These exercises are built and maintained in collaboration with contributors such as yourself. If you find any bugs or misspellings please contribute and/or report them.
-
-<!-- endhide -->
-
 ## Download and run:
 
 [Download here](https://github.com/4GeeksAcademy/network-troubleshooting/raw/master/assets/network-troubleshooting.pka) the file and open it with Packet Tracer, there you will find the instructions to follow and achieve the proposed objectives.
