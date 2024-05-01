@@ -1,6 +1,9 @@
 {
 	"slug" : "troubleshooting-packet-tracer-network",
-	"title" : "Troubleshooting a network with Packet Tracer",
+	"title" : {
+		"en":"Troubleshooting a network with Packet Tracer",
+		"es":"Resolución de problemas de red con Packet Tracer"
+	},
 	"preview": "https://breathecode.herokuapp.com/v1/media/file/thumbnail-introduccion-packet-tracer",
 	"status": "draft",
 	"translations": ["us","es"],
@@ -9,10 +12,13 @@
 	"syntax": "markdown",
 	"duration" : 3,
   "projectType": "project",
-	"description" : "Setup a network with Packet Tracer, and implement Access Control List to ensure the correct use of the servers in it.",
+	"description" : {
+		"en":"Setup a network with Packet Tracer, and implement Access Control List to ensure the correct use of the servers in it.",
+		"es":"Configure una red con Packet Tracer, e implemente Listas de Control de Acceso para asegurar el uso correcto de los servidores en ella."
+	},
 	"delivery": {
 		"instructions": {
-			"us": "Please drag your finished pka file and upload it here",
+			"us": "Please attach your finished pka file and upload it here",
 			"es": "Por favor adjunta tu archivo pka listo y cárgalo aquí"
 		},
 		"formats": ["application/octet-stream,.pka"]

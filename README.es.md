@@ -1,11 +1,10 @@
 # Solucionando problemas de red
 
 <!-- hide -->
-<a href="https://www.4geeksacademy.co"><img height="280" align="right" src="https://github.com/4GeeksAcademy/installing-windows-on-virtual-machine/blob/master/js-bg-badge.png"></a>
 
 > By [@arnaldoperez](https://github.com/arnaldoperez) and [other contributors](https://github.com/4GeeksAcademy/installing-windows-on-virtual-machine/graphs/contributors) at [4Geeks Academy](https://4geeksacademy.co/)
 
-![last commit](https://img.shields.io/github/last-commit/4geeksacademy/installing-windows-on-virtual-machine)
+![last commit](https://img.shields.io/github/last-commit/4geeksacademy/network-troubleshooting)
 [![build by developers](https://img.shields.io/badge/build_by-Developers-blue)](https://4geeks.com)
 [![build by developers](https://img.shields.io/twitter/follow/4geeksacademy?style=social&logo=twitter)](https://twitter.com/4geeksacademy)
 
@@ -29,13 +28,19 @@ Esta práctica abarca los siguientes temas:
 
 <!-- endhide -->
 
-## Descarga y ejecuta
+## 🌱 How to start this project.
 
-[Descarga aquí](https://github.com/4GeeksAcademy/network-troubleshooting/raw/master/assets/network-troubleshooting.pka) el archivo y ejecutalos con Packet Tracer, ahi encontrarás las instrucciones a seguir para lograr los objetivos propuestos.
+>[Descarga aquí](https://github.com/4GeeksAcademy/network-troubleshooting/raw/master/assets/network-troubleshooting.pka) el archivo y abrelo con Packet Tracer
 
-## Instrucciones
+## 📝 Instructions
 
-Fuera de Packet Tracer, puedes encontrar las [instrucciones aquí](https://github.com/4GeeksAcademy/network-troubleshooting/blob/master/instructions.es.md)
+Una vez hayas abierto el archivo con Packet Tracer podrás ver la ventana flotante con las instrucciones a seguir.
+
+Adicionalmente puedes encontrar las instrucciones fuera de Packet Tracer en [éste enlace](https://github.com/4GeeksAcademy/network-troubleshooting/blob/master/instructions.es.md)
+
+## 🚛 How to deliver this project
+
+Una vez hayas resuelto todos los planteamientos de las instrucciones en Packet Tracer guarda tus cambios y adjunta el archivo en la plataforma 4geeks.com en el proyecto correspondiente.
 
 ## Colaboradores
 
