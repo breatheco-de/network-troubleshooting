@@ -21,6 +21,7 @@ Esta práctica abarca los siguientes temas:
 4. Configuracion de redes WiFi
 5. Listas de control de acceso (ACL)
 
+<<<<<<< HEAD
 <!-- hide -->
 ## Antes de empezar... algo relacionado con los tutoriales:
 
@@ -29,6 +30,9 @@ Esta práctica abarca los siguientes temas:
 <!-- endhide -->
 
 ## 🌱 How to start this project.
+=======
+## Descarga y ejecuta
+>>>>>>> fc1ce00171ecb33661423677dc89580d64d8adb4
 
 >[Descarga aquí](https://github.com/4GeeksAcademy/network-troubleshooting/raw/master/assets/network-troubleshooting.pka) el archivo y abrelo con Packet Tracer
 
@@ -42,6 +46,7 @@ Adicionalmente puedes encontrar las instrucciones fuera de Packet Tracer en [és
 
 Una vez hayas resuelto todos los planteamientos de las instrucciones en Packet Tracer guarda tus cambios y adjunta el archivo en la plataforma 4geeks.com en el proyecto correspondiente.
 
+<!-- hide -->
 ## Colaboradores
 
 Gracias a estas personas maravillosas ([emoji key](https://github.com/kentcdodds/all-contributors#emoji-key)):
@@ -50,8 +55,9 @@ Gracias a estas personas maravillosas ([emoji key](https://github.com/kentcdodds
   
 2. [Alejandro Sanchez (alesanchezr)](https://github.com/alesanchezr),  contribution: (bug reports) 🐛
 
-3. [Lorena Gubaira (lorenagubaira)](https://github.com/lorenagubaira), contribution: (bug reports) 🐛, contribution: (coder), (translation) 🌎
+3. [Lorena Gubaira (lorenagubaira)](https://github.com/lorenagubaira), contribution: (bug reports) 🐛, contribution: (editor), (translation) 🌎
 
 Este proyecto sigue la especificación [all-contributors](https://github.com/kentcdodds/all-contributors). ¡Todas las contribuciones son bienvenidas!
 
 Este y otros ejercicios son usados para [aprender a programar](https://4geeksacademy.com/es/aprender-a-programar/aprender-a-programar-desde-cero) por parte de los alumnos de 4Geeks Academy [Coding Bootcamp](https://4geeksacademy.com/us/coding-bootcamp) realizado por [Alejandro Sánchez](https://twitter.com/alesanchezr) y muchos otros contribuyentes. Conoce más sobre nuestros [Cursos de Programación](https://4geeksacademy.com/es/curso-de-programacion-desde-cero?lang=es) para convertirte en [Full Stack Developer](https://4geeksacademy.com/es/coding-bootcamps/desarrollador-full-stack/?lang=es), o nuestro [Data Science Bootcamp](https://4geeksacademy.com/es/coding-bootcamps/curso-datascience-machine-learning).
+<!-- endhide -->
