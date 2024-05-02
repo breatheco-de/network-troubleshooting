@@ -4,7 +4,6 @@
 <a href="https://www.4geeksacademy.co"><img height="280" align="right" src="https://github.com/4GeeksAcademy/installing-windows-on-virtual-machine/blob/master/js-bg-badge.png"></a>
 
 > By [@arnaldoperez](https://github.com/arnaldoperez) and [other contributors](https://github.com/4GeeksAcademy/installing-windows-on-virtual-machine/graphs/contributors) at [4Geeks Academy](https://4geeksacademy.co/)
-
 ![last commit](https://img.shields.io/github/last-commit/4geeksacademy/installing-windows-on-virtual-machine)
 [![build by developers](https://img.shields.io/badge/build_by-Developers-blue)](https://4geeks.com)
 [![build by developers](https://img.shields.io/twitter/follow/4geeksacademy?style=social&logo=twitter)](https://twitter.com/4geeksacademy)
@@ -22,13 +21,27 @@ This practice covers the following subjects:
 4. WiFi networks
 5. Access control list (ACL)
 
-## Download and run:
 
-[Download here](https://github.com/4GeeksAcademy/network-troubleshooting/raw/master/assets/network-troubleshooting.pka) the file and open it with Packet Tracer, there you will find the instructions to follow and achieve the proposed objectives.
+<!-- hide -->
+## Before you begin... something related with these tutorials:
 
-## Instructions
+> We need you! These exercises are built and maintained by contributions from people like you. If you find any bugs or spelling errors, please report them.
 
-Outside Packet Tracer, you can find the [instructions here](https://github.com/4GeeksAcademy/network-troubleshooting/blob/master/instructions.md)
+<!-- endhide -->
+
+## 🌱 How to start this project?
+
+[Download here](https://github.com/4GeeksAcademy/network-troubleshooting/raw/master/assets/network-troubleshooting.pka) the file and open it with Packet Tracer.
+
+## 📝 Instructions
+
+Once you have opened the file with Packet Tracer you will see the floating window with the instructions to follow.
+
+Additionally you can find the instructions outside of Packet Tracer in [this link](https://github.com/4GeeksAcademy/network-troubleshooting/blob/master/instructions.md)
+
+## 🚛 How to deliver this project?
+
+Once you have solved all of the Packet Tracer instruction approaches, save your changes and attach the file to the 4geeks.com platform in the corresponding project.
 
 <!-- hide -->
 ## Contributors

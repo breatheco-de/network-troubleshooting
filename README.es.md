@@ -1,14 +1,12 @@
 # Solucionando problemas de red
 
 <!-- hide -->
-
 > By [@arnaldoperez](https://github.com/arnaldoperez) and [other contributors](https://github.com/4GeeksAcademy/installing-windows-on-virtual-machine/graphs/contributors) at [4Geeks Academy](https://4geeksacademy.co/)
-
 ![last commit](https://img.shields.io/github/last-commit/4geeksacademy/network-troubleshooting)
 [![build by developers](https://img.shields.io/badge/build_by-Developers-blue)](https://4geeks.com)
 [![build by developers](https://img.shields.io/twitter/follow/4geeksacademy?style=social&logo=twitter)](https://twitter.com/4geeksacademy)
 
-*Estas instrucciones [están disponibles en 🇪🇸 español](https://github.com/4GeeksAcademy/installing-windows-on-virtual-machine/blob/main/README.es.md) :es:*
+*This instructions [are available in english](https://github.com/4GeeksAcademy/installing-windows-on-virtual-machine/blob/main/README.md)*
 <!-- endhide -->
 
 En este escenario simulas ser el responsable de la red de un campus de 4Geeks Academy. Deberás completar las configuraciones necesarias para poner en funcionamiento la red, e implementar medidas de seguridad para garantizar el uso correcto de los servicios internos.
@@ -21,7 +19,6 @@ Esta práctica abarca los siguientes temas:
 4. Configuracion de redes WiFi
 5. Listas de control de acceso (ACL)
 
-<<<<<<< HEAD
 <!-- hide -->
 ## Antes de empezar... algo relacionado con los tutoriales:
 
@@ -29,20 +26,17 @@ Esta práctica abarca los siguientes temas:
 
 <!-- endhide -->
 
-## 🌱 How to start this project.
-=======
-## Descarga y ejecuta
->>>>>>> fc1ce00171ecb33661423677dc89580d64d8adb4
+## 🌱 ¿Cómo empezar este proyecto?
 
->[Descarga aquí](https://github.com/4GeeksAcademy/network-troubleshooting/raw/master/assets/network-troubleshooting.pka) el archivo y abrelo con Packet Tracer
+[Descarga aquí](https://github.com/4GeeksAcademy/network-troubleshooting/raw/master/assets/network-troubleshooting.pka) el archivo y abrelo con Packet Tracer.
 
-## 📝 Instructions
+## 📝 Instrucciones
 
 Una vez hayas abierto el archivo con Packet Tracer podrás ver la ventana flotante con las instrucciones a seguir.
 
 Adicionalmente puedes encontrar las instrucciones fuera de Packet Tracer en [éste enlace](https://github.com/4GeeksAcademy/network-troubleshooting/blob/master/instructions.es.md)
 
-## 🚛 How to deliver this project
+## 🚛 ¿Cómo entregar este proyecto?
 
 Una vez hayas resuelto todos los planteamientos de las instrucciones en Packet Tracer guarda tus cambios y adjunta el archivo en la plataforma 4geeks.com en el proyecto correspondiente.
 
