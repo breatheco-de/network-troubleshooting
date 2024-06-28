@@ -39,7 +39,8 @@
     flex-direction: row;
     justify-content: space-evenly;
   }
-  .highlight{
+
+  .highlight {
     background-color: lightblue;
     font-weight: 600;
     outline: 3px solid lightblue;
@@ -53,60 +54,78 @@
       DHCP Servers
     </h2>
     <p>
-      Once the connection between the servers and the rest of the network is established, it's time for you to use them to assign addresses to the other devices.
+      Once the connection between the servers and the rest of the network is established, it's time for you to use them
+      to assign addresses to the other devices.
     </p>
     <h3>
-      In each of them, you must configure an address pool that will be used to assign addresses to the devices that connect to the network. The values ​​that make up each pool are as follows:
+      In each of them, you must configure an address pool that will be used to assign addresses to the devices that
+      connect to the network. The values ​​that make up each pool are as follows:
     </h3>
-    
+
     <ul>
-      <li>Default Gateway: IP address of the router, which is the first address of the network (Example 192.168.0.1)</li>
-<li>DNS Server: It is the Domain Name Server, in this case, use <span class="highlight">192.168.2.10</span> which corresponds to the intranet server providing this service.</li>
-<li>Start IP Address: Corresponds to the address from which IP addresses will start being assigned. In this case, it starts from address 100 of the network (Example: 192.168.2.100)</li>
-<li>Subnet Mask: It is the subnet mask which in this case is <span class="highlight">255.255.255.0</span></li>
-<li>Maximum number of users: The maximum number of users should be <span class="highlight">100</span></li>
+      <li>Default Gateway: IP address of the router, which is the first address of the network (Example 192.168.0.1)
+      </li>
+      <li>DNS Server: It is the Domain Name Server, in this case, use <span class="highlight">192.168.2.10</span> which
+        corresponds to the intranet server providing this service.</li>
+      <li>Start IP Address: Corresponds to the address from which IP addresses will start being assigned. In this case,
+        it starts from address 100 of the network (Example: 192.168.2.100)</li>
+      <li>Subnet Mask: It is the subnet mask which in this case is <span class="highlight">255.255.255.0</span></li>
+      <li>Maximum number of users: The maximum number of users should be <span class="highlight">100</span></li>
     </ul>
     <p>
-      Once you have set these values, you should press the <span class="highlight">Save</span> button to save the pool changes. The rest of the values ​​remain by default.
+      Once you have set these values, you should press the <span class="highlight">Save</span> button to save the pool
+      changes. The rest of the values ​​remain by default.
     </p>
     <p>
-      In the <span class="highlight">Settings</span> option of the <span class="highlight">Config</span> tab, you should statically configure the gateway (Default gateway) and the DNS. Remember that the gateway for each network is the first assignable address in the IP address range of our network, while for DNS it points to the Intranet server: 192.168.2.10.
+      In the <span class="highlight">Settings</span> option of the <span class="highlight">Config</span> tab, you should
+      statically configure the gateway (Default gateway) and the DNS. Remember that the gateway for each network is the
+      first assignable address in the IP address range of our network, while for DNS it points to the Intranet server:
+      192.168.2.10.
     </p>
     <p>
-      Remember to vary the corresponding network addresses for each server. Once you have configured all of them, it's time to activate the DHCP option on each end device so that they acquire connectivity.
+      Remember to vary the corresponding network addresses for each server. Once you have configured all of them, it's
+      time to activate the DHCP option on each end device so that they acquire connectivity.
     </p>
   </div>
 
-</div>
   <!---------------Español----------------->
   <div class="box">
     <h2>
       Servidores DHCP
     </h2>
     <p>
-      Una vez establecida la conexión entre los servidores y el resto de la red, es hora de que los utilices para asignar direcciones a los demás dispositivos.   
+      Una vez establecida la conexión entre los servidores y el resto de la red, es hora de que los utilices para asignar
+      direcciones a los demás dispositivos.
     </p>
-    
+
     <h3>
-      En cada uno de ellos debes configurar una piscina o pool de direcciones que serán utilizadas para asignarlas a los equipos que se vayan conectando a la red. Los valores que conforman cada pool son los siguientes:
+      En cada uno de ellos debes configurar una piscina o pool de direcciones que serán utilizadas para asignarlas a los
+      equipos que se vayan conectando a la red. Los valores que conforman cada pool son los siguientes:
     </h3>
-    
+
     <ul>
       <li>Default Gateway: Dirección ip del router, es decir la primera dirección de la red (Ejemplo 192.168.0.1)</li>
-<li>DNS Server: Es el servidor de nombres de dominio, en este caso utiliza <span class="highlight">192.168.2.10</span> que corresponde al servidor de la intranet que presta este servicio.</li>
-<li>Start Ip Address: Corresponde a la dirección desde la cual empezarán a asignarse las direcciones IP. En este caso empieza desde la dirección 100 de la red (Ejemplo: 192.168.2.100)</li>
-<li>Subnet Mask: Es la mascara de subred que en este caso es <span class="highlight">255.255.255.0</span></li>
-<li> Maximun number of users: El máximo numero de usuarios debe ser <span class="highlight">100</span></li>
+      <li>DNS Server: Es el servidor de nombres de dominio, en este caso utiliza <span
+          class="highlight">192.168.2.10</span> que corresponde al servidor de la intranet que presta este servicio.</li>
+      <li>Start Ip Address: Corresponde a la dirección desde la cual empezarán a asignarse las direcciones IP. En este
+        caso empieza desde la dirección 100 de la red (Ejemplo: 192.168.2.100)</li>
+      <li>Subnet Mask: Es la mascara de subred que en este caso es <span class="highlight">255.255.255.0</span></li>
+      <li> Maximun number of users: El máximo numero de usuarios debe ser <span class="highlight">100</span></li>
     </ul>
     <p>
-      Una vez que hayas establecido estos valores, debes presionar el botón <span class="highlight">Save</span> para guardar los cambios del pool. El resto de los valores se quedan por defecto.
+      Una vez que hayas establecido estos valores, debes presionar el botón <span class="highlight">Save</span> para
+      guardar los cambios del pool. El resto de los valores se quedan por defecto.
     </p>
-    
+
     <p>
-      En la opción <span class="highlight">Settings</span> de la pestaña <span class="highlight">Config</span> debes configurar de forma estática la puerta de enlace (Default gateway) y el DNS. Recuerda que la puerta de enlace de cada red es la primera dirección asignable del rango de direcciones ip de nuestra red, mientras que para el DNS apunta al servidor Intranet: 192.168.2.10
+      En la opción <span class="highlight">Settings</span> de la pestaña <span class="highlight">Config</span> debes
+      configurar de forma estática la puerta de enlace (Default gateway) y el DNS. Recuerda que la puerta de enlace de
+      cada red es la primera dirección asignable del rango de direcciones ip de nuestra red, mientras que para el DNS
+      apunta al servidor Intranet: 192.168.2.10
     </p>
     <p>
-      Recuerda variar las direcciones de red correspondiente para cada servidor. Cuando los hayas configurado todos, es turno de que actives la opción DHCP en cada dispositivo final para que adquieran conectividad.
+      Recuerda variar las direcciones de red correspondiente para cada servidor. Cuando los hayas configurado todos, es
+      turno de que actives la opción DHCP en cada dispositivo final para que adquieran conectividad.
     </p>
   </div>
 
