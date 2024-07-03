@@ -11,14 +11,15 @@
 	"difficulty": "beginner",
 	"syntax": "markdown",
 	"duration" : 3,
-  "projectType": "project",
+  	"projectType": "project",
+	"localhostOnly": true,
 	"description" : {
 		"en":"Setup a network with Packet Tracer, and implement Access Control List to ensure the correct use of the servers in it.",
 		"es":"Configure una red con Packet Tracer, e implemente Listas de Control de Acceso para asegurar el uso correcto de los servidores en ella."
 	},
 	"delivery": {
 		"instructions": {
-			"us": "Please attach your finished pka file and upload it here",
+			"en": "Please attach your finished pka file and upload it here",
 			"es": "Por favor adjunta tu archivo pka listo y cárgalo aquí"
 		},
 		"formats": ["application/octet-stream,.pka"]
