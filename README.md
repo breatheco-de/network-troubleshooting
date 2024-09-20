@@ -37,11 +37,11 @@ This practice covers the following subjects:
 
 Once you have opened the file with Packet Tracer you will see the floating window with the instructions to follow.
 
-Additionally you can find the instructions outside of Packet Tracer in [this link](https://github.com/4GeeksAcademy/network-troubleshooting/blob/master/instructions.md)
+Additionally, you can find the instructions outside of Packet Tracer in [this link](https://github.com/4GeeksAcademy/network-troubleshooting/blob/master/instructions.md)
 
 ## 🚛 How to deliver this project?
 
-Once you have solved all of the Packet Tracer instruction approaches, save your changes and attach the file to the 4geeks.com platform in the corresponding project.
+Once you have solved the Packet Tracer instruction approaches, save your changes and attach the file to the 4geeks.com platform in the corresponding project.
 
 <!-- hide -->
 ## Contributors
